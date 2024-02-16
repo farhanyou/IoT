@@ -6,7 +6,7 @@
 Author: Ferhan Y. (fehaan@hotmail.com)
 License: General Public (feel free to use it in your projects)
 
-This program reads data from multiple analog inputs using a multiplexer ic CD4051 connected to the ESP8266/NODEMCU or Arduino development board.
+This example program reads data from multiple analog inputs using a multiplexer ic CD4051 connected to the ESP8266/NODEMCU or Arduino development board.
 It utilizes a digital multiplexer to select different sensor channels and reads data from each channel.
 The sensor data can then be called separately for each specific sensor channel/pin or printed over serial communication.
 

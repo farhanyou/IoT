@@ -1,6 +1,7 @@
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
  Multiplexer CD4051 ic for multiple analog sensors with ESP8266 / NODEMCU / and Arduino Boards
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 License: General Public (feel free to use it in your projects)
 
 This program reads data from multiple analog inputs using a multiplexer ic CD4051 connected to the ESP8266/NODEMCU or Arduino development board.

@@ -1,14 +1,14 @@
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
- <h1>Multiplexer CD4051 ic for multiple analog sensors</h1>
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-<b>Author:</b> Ferhan Y. (fehaan@hotmail.com)
-<b>License:</b> General Public (feel free to use it in your projects)
+-----------------------------------------------------------------------------------------------------------------------
+ #Multiplexer CD4051 ic for multiple analog sensors
+-----------------------------------------------------------------------------------------------------------------------
+Author: Ferhan Y. (fehaan@hotmail.com)
+License: General Public (feel free to use it in your projects)
 
 This example program reads data from multiple analog inputs using a multiplexer ic CD4051 connected to the ESP8266/NODEMCU or Arduino development board.
 It utilizes a digital multiplexer to select different sensor channels and reads data from each channel.
 The sensor data can then be called separately for each specific sensor channel/pin or printed over serial communication.
-<p>
- <b>Pinouts CD4051 IC:</b>
+ 
+ ##Pinouts CD4051 IC:
          +--+--+--+
   IN0 -|13        16|- VCC
   IN1 -|14         6|- INH/EN
@@ -19,9 +19,8 @@ The sensor data can then be called separately for each specific sensor channel/p
   IN6 -|2         10|- S1/B
   IN7 -|4          9|- S2/C
          +--+--+--+
-</p>
 
-<h3>Here's how you can connect the CD4051 IC to the ESP8266/NODEMCU board pins:</h3>
+Here's how you can connect the CD4051 IC to the ESP8266/NODEMCU board pins:
 
 - <b>VCC (Pin 16):</b> Connect to 3.3V or 5V power source from the ESP8266/NODEMCU board.
 - <b>VSS (Pin 8):</b> Connect to GND of the ESP8266/NODEMCU board.
@@ -35,4 +34,4 @@ The sensor data can then be called separately for each specific sensor channel/p
 <h3>Functionality:</h3>
 
 <b>Instantiate the MultiSense Library:</b>
-<code><p>multiSensor MySensor(S0,S1,S2,AnalaogPin, numSensors); </p></code>
+'multiSensor MySensor(S0,S1,S2,AnalaogPin, numSensors);'

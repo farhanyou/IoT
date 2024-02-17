@@ -1,5 +1,5 @@
 
- # <h1>Multiplexer CD4051 ic for multiple analog sensors<h1>
+ # Multiplexer CD4051 ic for multiple analog sensors
 
 **Author:** Ferhan Y. (fehaan@hotmail.com)
 **License:** General Public (feel free to use it in your projects)

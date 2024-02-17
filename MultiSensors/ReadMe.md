@@ -1,5 +1,5 @@
 -----------------------------------------------------------------------------------------------------------------------
- #Multiplexer CD4051 ic for multiple analog sensors
+ #Multiplexer CD4051 ic for multiple analog sensors#
 -----------------------------------------------------------------------------------------------------------------------
 Author: Ferhan Y. (fehaan@hotmail.com)
 License: General Public (feel free to use it in your projects)
@@ -8,7 +8,7 @@ This example program reads data from multiple analog inputs using a multiplexer 
 It utilizes a digital multiplexer to select different sensor channels and reads data from each channel.
 The sensor data can then be called separately for each specific sensor channel/pin or printed over serial communication.
  
- ##Pinouts CD4051 IC:
+ ##Pinouts CD4051 IC:##
          +--+--+--+
   IN0 -|13        16|- VCC
   IN1 -|14         6|- INH/EN
@@ -31,7 +31,7 @@ Here's how you can connect the CD4051 IC to the ESP8266/NODEMCU board pins:
                                You can configure these pins to select one of the 8 channels of the multiplexer.
 - <b>IN0...IN7:</b> these are the pins conencted with the analog sensors/inputs.
 
-<h3>Functionality:</h3>
+##Functionality:</h3>##
 
 <b>Instantiate the MultiSense Library:</b>
-'multiSensor MySensor(S0,S1,S2,AnalaogPin, numSensors);'
+`multiSensor MySensor(S0,S1,S2,AnalaogPin, numSensors);`

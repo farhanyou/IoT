@@ -92,7 +92,7 @@ int amb_light_value;
 
 void loop(){
   // call sensor directly using its address
-  int amb_light_value= MySensors.read(AMBIENT_LDR_SENSOR);
+  amb_light_value= MySensors.read(AMBIENT_LDR_SENSOR);
 
   Serial.print("Ambient Light:");
   Serial.println(amb_light_value);

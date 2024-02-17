@@ -9,6 +9,7 @@ It utilizes a digital multiplexer to select different sensor channels and reads 
 The sensor data can then be called separately for each specific sensor channel/pin or printed over serial communication.
  
  ## Pinouts CD4051 IC:
+ ```
          +--+--+--+
   IN0 -|13        16|- VCC
   IN1 -|14         6|- INH/EN
@@ -19,7 +20,7 @@ The sensor data can then be called separately for each specific sensor channel/p
   IN6 -|2         10|- S1/B
   IN7 -|4          9|- S2/C
          +--+--+--+
-
+```
 Here's how you can connect the CD4051 IC to the ESP8266/NODEMCU board pins:
 
 - **VCC (Pin 16):** Connect to 3.3V or 5V power source from the ESP8266/NODEMCU board.
@@ -34,4 +35,6 @@ Here's how you can connect the CD4051 IC to the ESP8266/NODEMCU board pins:
 ## Functionality:
 
 ### Instantiate the MultiSense Library:
-`multiSensor MySensor(S0,S1,S2,AnalaogPin, numSensors);`
+```
+multiSensor MySensor(S0,S1,S2,AnalaogPin, numSensors);
+```

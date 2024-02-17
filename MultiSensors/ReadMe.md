@@ -60,11 +60,11 @@ You can easily create an instance of the library by parsing the following parame
 - **numSensors**: refers to the total sensors attached to the multiplexer **CD4051** ic.
 
 ```
-multiSensor::multiSensor(int, int, int, int, int);
+multiSensors::multiSensors(int, int, int, int, int);
 ```
-Example:
+**Example:**
 ```
-multiSensors mySensors(S0,S1,S2,AnalaogPin, numSensors);
+multiSensors mySensors(S0, S1, S2, AnalaogPin, numSensors);
 ```
 ###Initialize the CD4051 Multiplexer IC:
 I have provided an easy way to initialize the multiplexer ic in order to start reading the sensors data accurately.
@@ -79,9 +79,9 @@ void setup(){
 ###Reading One Sensor Value:
 This library is designed in a way to directly retieve a single sensor value by calling the respective channel or multiplexer truth table. Here's an example for your quick reference.
 ```
-multiSensor::read(int chnl_num); // reads specific analog channel of the ic
+multiSensors::read(int chnl_num); // reads specific analog channel of the ic
 ```
-Example:
+**Example:**
 ```
 // light (LDR) sensor connected to the ic (IN5) channel of CD4051
 #define AMBIENT_LDR_SENSOR 5 
@@ -89,9 +89,8 @@ Example:
 // assign a variable to hold the sensor data:
 int amb_light_value;
 
-// call sensor directly using its address
-```
 void loop(){
+  // call sensor directly using its address
   int amb_light_value= MySensors.read(AMBIENT_LDR_SENSOR);
 
   Serial.print("Ambient Light:");
@@ -106,7 +105,7 @@ The MultiSensor library is also equiped with a feature of reading all connected 
 ```
 multiSensor::readAll(); //returns an int array
 ```
-Example:
+**Example:**
 ```
 int* sensor_data;
 sensor_data = mySensor.readAll();

@@ -38,7 +38,7 @@ Here's how you can connect the CD4051 IC to the ESP8266/NODEMCU board pins:
 
 I have developed a multidimensional array to use the channel addresses in order to save time and maintain accuracy of sensor data. This is described as following.
 
-### Multiplexer Channels (a.k.a. Multiplxer Truth Table)
+### Multiplexer Channels (a.k.a. Multiplexer Truth Table)
 ```
 // Multiplexer channel selection configurations
   int mux_channels[8][3] = {

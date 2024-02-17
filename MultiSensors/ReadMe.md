@@ -36,8 +36,9 @@ Here's how you can connect the CD4051 IC to the ESP8266/NODEMCU board pins:
 
 ## Functionality:
 
-I have developed a multidimensional array to use the channel addresses in order to save time and maintain accuracy of sensor data. This is described as following
-###Multiplexer Channels (a.k.a. Multiplxer Truth Table)
+I have developed a multidimensional array to use the channel addresses in order to save time and maintain accuracy of sensor data. This is described as following.
+
+### Multiplexer Channels (a.k.a. Multiplxer Truth Table)
 ```
 // Multiplexer channel selection configurations
   int mux_channels[8][3] = {
@@ -66,7 +67,7 @@ multiSensors::multiSensors(int, int, int, int, int);
 ```
 multiSensors mySensors(S0, S1, S2, AnalaogPin, numSensors);
 ```
-###Initialize the CD4051 Multiplexer IC:
+### Initialize the CD4051 Multiplexer IC:
 I have provided an easy way to initialize the multiplexer ic in order to start reading the sensors data accurately.
 ```
 void setup(){
@@ -76,7 +77,7 @@ void setup(){
 }
 ```
 
-###Reading One Sensor Value:
+### Reading One Sensor Value:
 This library is designed in a way to directly retieve a single sensor value by calling the respective channel or multiplexer truth table. Here's an example for your quick reference.
 ```
 multiSensors::read(int chnl_num); // reads specific analog channel of the ic
@@ -99,7 +100,7 @@ void loop(){
   delay(5000);	//wait for 5 seconds
 }
 ```
-###Reading All Analog Sensors:
+### Reading All Analog Sensors:
 The MultiSensor library is also equiped with a feature of reading all connected sensors. This function returns an array which can be used with other variablesor pointers to separately displaying the individual sensor data.
 
 ```
